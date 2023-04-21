@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <script src="app.js" defer></script>
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+
+  <main>
+    <div class="rating-container">
+      <picture class="star-container">
+        <img src="images/icon-star.svg" class="star" alt="star">
+      </picture>
+      <h1 class="header">How did we do?</h1>
+      <p class="light-gray-one">
+        Please let us know how we did with your support<br> request. All feedback is appreciated
+        to help us<br> improve our offering!
+      </p>
+      <div class="button-container">
+        <div class="circle-container">
+          <button class="circle">1</button>
+          <button class="circle">2</button>
+          <button class="circle">3</button>
+          <button class="circle">4</button>
+          <button class="circle">5</button>
+        </div>
+        <button class="submit">SUBMIT</button>
+      </div>
+    </div>
+    <!-- Rating state end -->
+    <!-- Thank you state start -->
+    <div class="feedback-container hidden">
+      <picture>
+        <img src="images/illustration-thank-you.svg" alt="thank you">
+      </picture>
+      <p class="rating">You selected&nbsp;<span></span>&nbsp;out of 5
+      </p>
+      <h2>Thank you!</h2>
+      <p class="light-gray-two">
+        We appreciate you taking the time to give a rating.<br> If you ever need more support,
+        don’t hesitate to<br> get in touch!
+      </p>
+    </div>
+    <!-- Thank you state end -->
+  </main>
+</body>
+
+</html>
